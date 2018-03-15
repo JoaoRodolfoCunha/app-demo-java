@@ -1,0 +1,8 @@
+pipeline:
+  build:
+    image: node:latest
+    commands:
+      - npm install 
+      - npm test
+    when:
+      branch: master
